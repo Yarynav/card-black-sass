@@ -19,6 +19,7 @@ body {
   .card {
     @extend .box-flex;
     @include color-card;
+    box-shadow: 2px 2px 2px $purple;
     .card-title {
       color: $purple;
     }
