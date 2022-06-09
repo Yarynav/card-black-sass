@@ -1,0 +1,29 @@
+.box-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin color-card() {
+  color: $white;
+  background-color: $dark;
+}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Quattrocento+Sans:ital,wght@1,700&family=Raleway:wght@600&family=Roboto+Flex:opsz@8..144&display=swap");
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  @extend .box-flex;
+  min-height: 100vh;
+
+  .card {
+    @extend .box-flex;
+    @include color-card;
+    .card-title {
+      color: $purple;
+    }
+    .btn-purple {
+      color: $white;
+    }
+  }
+}
