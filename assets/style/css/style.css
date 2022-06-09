@@ -11233,6 +11233,7 @@ body {
 body .card {
   color: #fff;
   background-color: #212529;
+  box-shadow: 2px 2px 2px #cf649a;
 }
 body .card .card-title {
   color: #cf649a;
